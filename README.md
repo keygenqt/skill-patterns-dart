@@ -17,7 +17,7 @@ Examples classic OOP design patterns
 * Visitor
 
 ### Creational
-* Abstract factory
+* [Abstract factory](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/creational/abstract_factory)
 * [Builder](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/creational/builder)
 * [Factory Method](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/creational/factory_method)
 * [Prototype](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/creational/prototype)
