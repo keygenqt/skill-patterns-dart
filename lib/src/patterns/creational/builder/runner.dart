@@ -19,8 +19,8 @@ class RunnerBuilder implements IRunner {
     final factory = factoryBuilder.getResult();
 
     return '''
-    House: $house
-    Factory: $factory
+House: $house
+Factory: $factory
     ''';
   }
 }

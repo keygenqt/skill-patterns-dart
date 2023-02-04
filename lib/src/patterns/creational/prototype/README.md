@@ -47,6 +47,7 @@ class RunnerPrototype implements IRunner {
 #### Output
 
 ```shell
+Prototype
 Shapes: [
     {identityHashCode: 384874063, radius: 50, x: 10, y: 10, color: red}, 
     {identityHashCode: 384874063, radius: 50, x: 10, y: 10, color: red}, 
