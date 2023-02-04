@@ -4,7 +4,7 @@ abstract class IDialog {
   IButton createButton();
   String render() {
     return '''
---------------------DIALOG---------------------
+------------------  DIALOG  -------------------
 |                                             |
 ${createButton().render()}
 |                                             |

@@ -30,7 +30,7 @@ class RunnerFactoryMethod implements IRunner {
 
 ```shell
 Factory method
---------------------DIALOG---------------------
+------------------  DIALOG  -------------------
 |                                             |
 |             ------------------              |
 |             |     Windows    |              |
