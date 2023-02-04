@@ -32,6 +32,8 @@ Examples classic OOP design patterns
 * Flyweight
 * Proxy
 
+### CLI
+
 ```shell
 Examples classic OOP design patterns.
 
