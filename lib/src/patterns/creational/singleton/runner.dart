@@ -1,3 +1,4 @@
+import 'package:patterns_dart/src/patterns/creational/singleton/singleton.dart';
 import 'package:patterns_dart/src/patterns/runner.dart';
 
 class RunnerSingleton implements IRunner {
@@ -5,6 +6,6 @@ class RunnerSingleton implements IRunner {
 
   @override
   String invoke() {
-    return 'RunnerSingleton-invoke';
+    return Singleton.instance.invokeFun();
   }
 }
