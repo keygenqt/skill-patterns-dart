@@ -18,7 +18,6 @@ Examples classic OOP design patterns
 
 ### Creational
 * Abstract factory
-* Builder
 * [Builder](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/creational/builder)
 * Factory Method
 * Prototype
