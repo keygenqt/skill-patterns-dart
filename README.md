@@ -21,7 +21,7 @@ Examples classic OOP design patterns
 * Builder
 * Factory Method
 * Prototype
-* [Singleton](/skill-patterns-dart/tree/main/lib/src/patterns/creational/singleton)
+* [Singleton](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/creational/singleton)
 
 ### Structural
 * Adapter
