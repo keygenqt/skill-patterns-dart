@@ -31,3 +31,19 @@ Examples classic OOP design patterns
 * Facade
 * Flyweight
 * Proxy
+
+```shell
+Examples classic OOP design patterns.
+
+Usage: patterns_dart <command> [arguments]
+
+Global options:
+-h, --help            Print this usage information.
+-v, --version         Print the current version.
+    --[no-]verbose    Noisy logging, including all shell commands executed.
+
+Available commands:
+  pattern   Here you can specify which pattern to execute
+
+Run "patterns_dart help <command>" for more information about a command.
+```
