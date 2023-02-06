@@ -1,20 +1,24 @@
 /// This is not our class and we have no control over it.
 /// To simplify it, you can use the 'facade'
 class VideoFile {
-  VideoFile(this._filename);
+  VideoFile(this._file);
 
-  final String _filename;
+  final String _file;
+
+  String get _name {
+    return _file.substring(0, _file.indexOf('.'));
+  }
 
   String compressionToOgg() {
-    return '$_filename: ${OggCompressionCodec().compress()}';
+    return '$_file compress to $_name.${OggCompressionCodec().compress()}';
   }
 
   String compressionToMPEG4() {
-    return '$_filename: ${MPEG4CompressionCodec().compress()}';
+    return '$_file compress to $_name.${MPEG4CompressionCodec().compress()}';
   }
 
   String compressionToMP4() {
-    return '$_filename: ${MP4CompressionCodec().compress()}';
+    return '$_file compress to $_name.${MP4CompressionCodec().compress()}';
   }
 }
 

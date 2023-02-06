@@ -22,5 +22,5 @@ class RunnerFacade implements IRunner {
 
 ```shell
 Facade
-filename.3gp: mp4
+filename.3gp compress to filename.mp4
 ```
