@@ -28,7 +28,7 @@ Examples classic OOP design patterns
 * [Bridge](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/structural/bridge)
 * [Composite](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/structural/composite)
 * [Decorator](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/structural/decorator)
-* Facade
+* [Facade](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/structural/facade)
 * Flyweight
 * Proxy
 

@@ -7,11 +7,20 @@ framework, or any other complex set of classes.
 #### Runner
 
 ```dart
+class RunnerFacade implements IRunner {
+  const RunnerFacade();
 
+  @override
+  String invoke() {
+    final convertor = VideoConverter();
+    return convertor.convert('filename.3gp', VideoFormat.mp4);
+  }
+}
 ```
 
 #### Output
 
 ```shell
-
+Facade
+filename.3gp: mp4
 ```
