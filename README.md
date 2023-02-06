@@ -25,7 +25,7 @@ Examples classic OOP design patterns
 
 ### Structural
 * [Adapter](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/structural/adapter)
-* Bridge
+* [Bridge](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/structural/bridge)
 * Composite
 * Decorator
 * Facade
