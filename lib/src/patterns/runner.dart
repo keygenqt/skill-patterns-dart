@@ -1,3 +1,0 @@
-mixin IRunner {
-  String invoke();
-}

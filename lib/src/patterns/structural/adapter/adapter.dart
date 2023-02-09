@@ -1,3 +1,0 @@
-mixin Adapter {
-  String area();
-}

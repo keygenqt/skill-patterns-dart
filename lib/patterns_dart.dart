@@ -1,1 +1,0 @@
-library patterns_dart;

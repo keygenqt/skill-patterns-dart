@@ -5,6 +5,7 @@
 .packages
 build/
 pubspec.lock
+/.metadata
 
 # Files generated during tests
 .test_coverage.dart
@@ -13,4 +14,3 @@ coverage/
 
 # Android studio and IntelliJ
 .idea
-/file_decorator

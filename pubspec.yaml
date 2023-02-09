@@ -1,4 +1,4 @@
-name: patterns_dart
+name: server_awords
 description: A Very Good Project created by Very Good CLI.
 version: 0.0.1
 publish_to: none
@@ -11,6 +11,7 @@ dependencies:
   args: ^2.3.1
   mason_logger: ^0.2.4
   pub_updater: ^0.2.4
+  cupertino_icons: ^1.0.2
 
 dev_dependencies:
   build_runner: ^2.0.0
@@ -19,6 +20,3 @@ dev_dependencies:
   mocktail: ^0.3.0
   test: ^1.19.2
   very_good_analysis: ^3.1.0
-
-executables:
-  patterns_dart:
