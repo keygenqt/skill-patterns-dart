@@ -10,6 +10,8 @@ const packageName = 'patterns_dart';
 const description = 'Examples classic OOP design patterns.';
 
 class PatternsDartCommandRunner extends CommandRunner<int> {
+
+
   /// {@macro patterns_dart_command_runner}
   PatternsDartCommandRunner({
     Logger? logger,
