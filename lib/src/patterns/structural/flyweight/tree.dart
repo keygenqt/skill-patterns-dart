@@ -1,6 +1,6 @@
 import 'package:mason_logger/mason_logger.dart';
 
-enum TreeColors { red, green, white }
+enum TreeColors { red, gray }
 
 enum TreeType { big, small }
 
@@ -74,10 +74,8 @@ small -----------
     switch (data.color) {
       case TreeColors.red:
         return lightRed.wrap(tree) ?? tree;
-      case TreeColors.green:
-        return lightGreen.wrap(tree) ?? tree;
-      case TreeColors.white:
-        return white.wrap(tree) ?? tree;
+      case TreeColors.gray:
+        return lightGray.wrap(tree) ?? tree;
     }
   }
 }

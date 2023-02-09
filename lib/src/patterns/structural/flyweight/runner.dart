@@ -17,11 +17,11 @@ class RunnerFlyweight implements IRunner {
 
     final tree3 = Tree(
       TreeType.big,
-      TreeFactory.getTreeType(color: TreeColors.green, symbol: '#'),
+      TreeFactory.getTreeType(color: TreeColors.gray, symbol: '#'),
     );
     final tree4 = Tree(
       TreeType.big,
-      TreeFactory.getTreeType(color: TreeColors.green, symbol: '#'),
+      TreeFactory.getTreeType(color: TreeColors.gray, symbol: '#'),
     );
 
     final buffer = StringBuffer();
