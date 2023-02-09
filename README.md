@@ -30,7 +30,7 @@ Examples classic OOP design patterns
 * [Decorator](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/structural/decorator)
 * [Facade](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/structural/facade)
 * [Flyweight](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/structural/flyweight)
-* Proxy
+* [Proxy](https://github.com/keygenqt/skill-patterns-dart/tree/main/lib/src/patterns/structural/proxy)
 
 ### CLI
 
