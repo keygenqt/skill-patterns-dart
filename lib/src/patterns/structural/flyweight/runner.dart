@@ -5,7 +5,7 @@ class RunnerFlyweight implements IRunner {
   const RunnerFlyweight();
 
   @override
-  String invoke() {
+  Future<String> invoke() async {
     final tree1 = Tree(
       TreeType.small,
       TreeFactory.getTreeType(color: TreeColors.red, symbol: '*'),
@@ -30,6 +30,6 @@ class RunnerFlyweight implements IRunner {
         ..write(element.draw())
         ..write('\n');
     }
-    return buffer.toString();
+    return Future.value(buffer.toString());
   }
 }

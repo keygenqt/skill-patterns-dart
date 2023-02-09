@@ -7,16 +7,16 @@ class RunnerFactoryMethod implements IRunner {
   const RunnerFactoryMethod();
 
   @override
-  String invoke() {
-
+  Future<String> invoke() async {
     IDialog dialog;
 
-    if (Random().nextBool()) { // if windows == true
+    if (Random().nextBool()) {
+      // if windows == true
       dialog = WindowsDialog();
     } else {
       dialog = WebDialog();
     }
 
-    return dialog.render();
+    return Future.value(dialog.render());
   }
 }

@@ -4,7 +4,7 @@ class RunnerTemplateMethod implements IRunner {
   const RunnerTemplateMethod();
 
   @override
-  String invoke() {
-    return 'RunnerTemplateMethod-invoke';
+  Future<String> invoke() async {
+    return Future.value('RunnerTemplateMethod-invoke');
   }
 }

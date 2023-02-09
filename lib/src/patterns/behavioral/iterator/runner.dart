@@ -4,7 +4,7 @@ class RunnerIterator implements IRunner {
   const RunnerIterator();
 
   @override
-  String invoke() {
-    return 'RunnerIterator-invoke';
+  Future<String> invoke() async {
+    return Future.value('RunnerIterator-invoke');
   }
 }

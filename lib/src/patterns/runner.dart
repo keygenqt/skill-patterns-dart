@@ -1,3 +1,3 @@
 mixin IRunner {
-  String invoke();
+  Future<String> invoke();
 }

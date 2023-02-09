@@ -11,8 +11,8 @@ class RunnerSingleton implements IRunner {
   const RunnerSingleton();
 
   @override
-  String invoke() {
-    return Singleton.instance.invokeFun();
+  Future<String> invoke() async {
+    return Future.value(Singleton.instance.invokeFun());
   }
 }
 ```

@@ -4,7 +4,7 @@ class RunnerMediator implements IRunner {
   const RunnerMediator();
 
   @override
-  String invoke() {
-    return 'RunnerMediator-invoke';
+  Future<String> invoke() async {
+    return Future.value('RunnerMediator-invoke');
   }
 }

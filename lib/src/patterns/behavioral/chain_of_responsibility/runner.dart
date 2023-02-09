@@ -4,7 +4,7 @@ class RunnerCOfR implements IRunner {
   const RunnerCOfR();
 
   @override
-  String invoke() {
-    return 'RunnerChainOfResponsibility-invoke';
+  Future<String> invoke() async {
+    return Future.value('RunnerChainOfResponsibility-invoke');
   }
 }

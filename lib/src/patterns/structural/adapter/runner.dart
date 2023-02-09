@@ -8,13 +8,13 @@ class RunnerAdapter implements IRunner {
   const RunnerAdapter();
 
   @override
-  String invoke() {
+  Future<String> invoke() async {
     final moon = Moon();
     final circle = Circle(12);
     final square = Square(width: 20, height: 20);
 
     final adapter = <Adapter>[moon, circle, square];
 
-    return 'Area: ${adapter.map((e) => e.area())}';
+    return Future.value('Area: ${adapter.map((e) => e.area())}');
   }
 }

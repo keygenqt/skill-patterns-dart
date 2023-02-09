@@ -4,7 +4,7 @@ class RunnerObserver implements IRunner {
   const RunnerObserver();
 
   @override
-  String invoke() {
-    return 'RunnerObserver-invoke';
+  Future<String> invoke() async {
+    return Future.value('RunnerObserver-invoke');
   }
 }

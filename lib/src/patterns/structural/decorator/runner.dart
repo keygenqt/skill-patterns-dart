@@ -6,7 +6,7 @@ class RunnerDecorator implements IRunner {
   const RunnerDecorator();
 
   @override
-  String invoke() {
+  Future<String> invoke() async {
     // simple file
     final source = FileDataSource('file_decorator')
       ..writeData('Simple text source');
@@ -25,10 +25,10 @@ class RunnerDecorator implements IRunner {
 
     final compressionSource = compression.readData();
 
-    return '''
+    return Future.value('''
 Simple source: $simpleSource
 Encryption source: $encryptionSource
 Compression source: $compressionSource
-    ''';
+    ''');
   }
 }

@@ -4,7 +4,7 @@ class RunnerMemento implements IRunner {
   const RunnerMemento();
 
   @override
-  String invoke() {
-    return 'RunnerMemento-invoke';
+  Future<String> invoke() async {
+    return Future.value('RunnerMemento-invoke');
   }
 }

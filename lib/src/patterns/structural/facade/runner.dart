@@ -5,8 +5,8 @@ class RunnerFacade implements IRunner {
   const RunnerFacade();
 
   @override
-  String invoke() {
+  Future<String> invoke() async {
     final convertor = VideoConverter();
-    return convertor.convert('filename.3gp', VideoFormat.mp4);
+    return Future.value(convertor.convert('filename.3gp', VideoFormat.mp4));
   }
 }

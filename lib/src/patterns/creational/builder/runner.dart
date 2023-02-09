@@ -7,8 +7,7 @@ class RunnerBuilder implements IRunner {
   const RunnerBuilder();
 
   @override
-  String invoke() {
-
+  Future<String> invoke() async {
     final houseBuilder = HouseBuilder();
     final factoryBuilder = FactoryBuilder();
 
@@ -18,9 +17,9 @@ class RunnerBuilder implements IRunner {
     final house = houseBuilder.getResult();
     final factory = factoryBuilder.getResult();
 
-    return '''
+    return Future.value('''
 House: $house
 Factory: $factory
-    ''';
+    ''');
   }
 }

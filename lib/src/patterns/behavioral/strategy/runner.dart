@@ -4,7 +4,7 @@ class RunnerStrategy implements IRunner {
   const RunnerStrategy();
 
   @override
-  String invoke() {
-    return 'RunnerStrategy-invoke';
+  Future<String> invoke() async {
+    return Future.value('RunnerStrategy-invoke');
   }
 }

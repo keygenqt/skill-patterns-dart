@@ -6,12 +6,13 @@ class RunnerComposite implements IRunner {
   const RunnerComposite();
 
   @override
-  String invoke() {
+  Future<String> invoke() async {
     final graphics = CompoundGraphic()
       ..add(Circle())
       ..add(Rectangle())
       ..add(Circle())
       ..paddingLeft(3);
-    return graphics.draw();
+
+    return Future.value(graphics.draw());
   }
 }

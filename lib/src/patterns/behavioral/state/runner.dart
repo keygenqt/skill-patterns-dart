@@ -4,7 +4,7 @@ class RunnerState implements IRunner {
   const RunnerState();
 
   @override
-  String invoke() {
-    return 'RunnerState-invoke';
+  Future<String> invoke() async {
+    return Future.value('RunnerState-invoke');
   }
 }

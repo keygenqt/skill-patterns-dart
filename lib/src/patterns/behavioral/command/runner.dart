@@ -4,7 +4,7 @@ class RunnerCommand implements IRunner {
   const RunnerCommand();
 
   @override
-  String invoke() {
-    return 'RunnerCommand-invoke';
+  Future<String> invoke() async {
+    return Future.value('RunnerCommand-invoke');
   }
 }

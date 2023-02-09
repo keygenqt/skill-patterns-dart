@@ -7,7 +7,7 @@ class RunnerPrototype implements IRunner {
   const RunnerPrototype();
 
   @override
-  String invoke() {
+  Future<String> invoke() async {
     final list = <Shape>[];
 
     final circle = Circle(
@@ -35,6 +35,6 @@ class RunnerPrototype implements IRunner {
       ..add(rectangle)
       ..add(rectangle.clone());
 
-    return 'Shapes: $list';
+    return Future.value('Shapes: $list');
   }
 }

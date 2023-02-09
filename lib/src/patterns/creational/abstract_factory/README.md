@@ -8,7 +8,6 @@ objects without specifying their concrete classes.
 
 ```dart
 class Application {
-
   Application(this.factory);
 
   final IFactory factory;
@@ -32,16 +31,17 @@ class RunnerAbstractFactory implements IRunner {
   const RunnerAbstractFactory();
 
   @override
-  String invoke() {
+  Future<String> invoke() async {
     IFactory factory;
 
-    if (Random().nextBool()) { // if windows == true
+    if (Random().nextBool()) {
+      // if windows == true
       factory = WinFactory();
     } else {
       factory = WebFactory();
     }
 
-    return Application(factory).render();
+    return Future.value(Application(factory).render());
   }
 }
 ```

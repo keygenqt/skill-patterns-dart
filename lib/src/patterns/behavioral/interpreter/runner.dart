@@ -4,7 +4,7 @@ class RunnerInterpreter implements IRunner {
   const RunnerInterpreter();
 
   @override
-  String invoke() {
-    return 'RunnerInterpreter-invoke';
+  Future<String> invoke() async {
+    return Future.value('RunnerInterpreter-invoke');
   }
 }

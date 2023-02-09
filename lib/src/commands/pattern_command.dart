@@ -27,28 +27,24 @@ class PatternCommand extends Command<int> {
 
     final pattern = Patterns.fromString(argResults?['name'].toString() ?? '');
 
-    // execute pattern
-    pattern.runner?.let((it) {
-          _logger
-            ..info(lightCyan.wrap(pattern.label))
-            ..info(it.invoke());
-    });
-
-    // output if not found pattern
-    pattern.runner ??
-        invoke(() {
-          final output = lightRed.wrap('\nPattern not found!\n')!;
-          _logger
-            ..info(output)
-            ..info('You can specify the following patterns:\n');
-          for (final value in Patterns.values) {
-            if (value != Patterns.unknown) {
-              _logger.info(value.label);
-            } else {
-              _logger.info('\n');
-            }
-          }
-        });
+    if (pattern != Patterns.unknown) {
+      final result = await pattern.runner?.invoke();
+      _logger
+        ..info(lightCyan.wrap(pattern.label))
+        ..info(result);
+    } else {
+      final output = lightRed.wrap('\nPattern not found!\n')!;
+      _logger
+        ..info(output)
+        ..info('You can specify the following patterns:\n');
+      for (final value in Patterns.values) {
+        if (value != Patterns.unknown) {
+          _logger.info(value.label);
+        } else {
+          _logger.info('\n');
+        }
+      }
+    }
 
     return ExitCode.success.code;
   }

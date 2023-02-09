@@ -6,8 +6,7 @@ class RunnerBridge implements IRunner {
   const RunnerBridge();
 
   @override
-  String invoke() {
-
+  Future<String> invoke() async {
     final tv = Tv();
     final tvRemote = Remote(tv);
 
@@ -17,9 +16,9 @@ class RunnerBridge implements IRunner {
     tvRemote.togglePower();
     radioRemote.togglePower();
 
-    return '''
+    return Future.value('''
 Tv is work: ${tv.isTurnOn()}
 Radio is work: ${radio.isTurnOn()}
-    ''';
+    ''');
   }
 }
